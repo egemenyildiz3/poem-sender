@@ -10,9 +10,9 @@ POEM_FILE = os.path.join(SCRIPT_DIR, "poems.txt")
 # Email credentials
 SMTP_SERVER = "smtp.gmail.com" 
 SMTP_PORT = 587
-SENDER_EMAIL = "egemenyildiz03@gmail.com"
-SENDER_PASSWORD = "xnlq zuud owhd lvqg"
-RECEIVER_EMAIL = "nazansimay@gmail.com"
+SENDER_EMAIL = ""
+SENDER_PASSWORD = ""
+RECEIVER_EMAIL = ""
 
 
 def get_next_poem():
@@ -66,9 +66,6 @@ if __name__ == "__main__":
         if user_input == "y":
             daily_task()
             break
-        elif user_input == "n":
+        else:
             print("Operation cancelled.")
             break
-        else:
-            print("Invalid input. Please enter 'y' or 'n'.")
-
